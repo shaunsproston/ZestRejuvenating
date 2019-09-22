@@ -180,7 +180,7 @@ button:hover{
     flex-direction: column;
     flex: auto;
     width: 100%;
-    height: 1000px;
+    height: 1100px;
     background-image: url("../imgs/backgroundImg1.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -206,38 +206,34 @@ button:hover{
 /*********************************** SKEWED DIVIDES ********************************/
 
 .skew-div-left-top {
-    background-color: #ececec;
+    background-color: #FFD7C9;
     position: absolute;
     width: 100%;
     height: 170px;
     transform-origin: center right;
-    transform: skewY(3deg);
-    z-index: 1;
+    transform: skewY(5deg);
 }
 .skew-div-right-top {
-    background-color: #ececec;
+    background-color: #FFD7C9;
     position: absolute;
     width: 100%;
     height: 170px;
     transform-origin: center left;
     transform: skewY(-5deg);
-    z-index: 1;
 }
 .skew-div-left-bottom {
-    background-color: #ececec;
+    background-color: #FFD7C9;
     position: absolute;
     width: 100%;
     height: 2200px;
     transform-origin: bottom right;
-    transform: skewY(-7deg);
-    z-index: 1;
+    transform: skewY(-5deg);
 }
 .filler-div{
-    background-color: #ececec;
+    background-color: #FFD7C9;
     position: absolute;
     width: 100%;
     height: 250px;
-    z-index: 1;
 }
 
 /*********************************** SERVICES SECTION ********************************/
@@ -355,15 +351,15 @@ button:hover{
     align-items: center;
     flex: auto;
     width: 100%;
-    height: 4000px;
+    height: 4400px;
     min-height: 700px;
-    background-image: url("../imgs/backgroundImg3.jpg");
+    background-image: url("../imgs/backgroundImg2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     padding-top: 30px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .testamonial-header-container {
@@ -405,6 +401,7 @@ button:hover{
     border-bottom: solid #fefefe 5px;
     border-left: solid #fefefe 5px;
     border-radius: 3px;
+    z-index: 2;
     /* margin-right: 10%; */
 }
 
@@ -472,25 +469,41 @@ button:hover{
 /*********************************** ABOUT ME SECTION ********************************/
 
 .about-me-container {
-    display:flex;
+    position: absolute;
+    display: flex;
     flex-direction: column;
-    width:100%;
+    align-items: center;
+    width: 100%;
     height: auto;
-    background-image: url("../imgs/essential-oils.jpg");
+    min-height: 700px;
+    padding-top: 30px;
+    z-index: 2;
+    height: auto;
+    background-color: #FFD7C9;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: left;
-    padding: 30px 0px;
 }
 
+.about-me-header-container {
+    background-image: linear-gradient(to right, rgba(240, 91, 40, 1), rgba(0,0,0,0));
+    padding: .1px 5px;
+    height: 95px;
+    border-top: solid #fefefe 5px;
+    border-left: solid #fefefe 5px;
+    width: 60%;
+}
+
+.about-me-header {
+    border-radius: 1px;
+}
 .about-me-container h2{
     text-align: center;
 }
 
 .about-me-content {
     background-color: white;
-    width: 45%;
+    width: 60%;
     line-height: 1.75;
     opacity:0.8;
     border-radius: 10px;
@@ -503,7 +516,7 @@ button:hover{
     width: 150px;
     height: auto;
     border-radius: 200px;
-    border: solid black 1px;
+    border: solid #FFD7C9 1px;
     float: left;
     margin: 20px;
 }
