@@ -11,14 +11,13 @@
     <div class="main-container">    
         <div class="nav-container">
             <div>
-                <a href="#home"><i id="home-icon" class="fas fa-home"></i></a>
+                <a href="#home"><i id="home-icon" class="fas fa-home hover-black"></i></a>
             </div>
             <div class="nav-bar">
                 <ul>
-                    <a href="#services"><li>Services</li></a>
-                    <a href="#pricelist"><li>Testamonials</li></a>
-                    <a href="#about-me"><li>About Me</li></a>
-                    <a href="#contact"><li>Contact</li></a>
+                    <a href="#services"><li class="hover-black">Services</li></a>
+                    <a href="#pricelist"><li class="hover-black">Testamonials</li></a>
+                    <a href="#contact"><li class="hover-black">Contact</li></a>
                 </ul>
             </div>
             <div class="hamburger-menu">
@@ -29,9 +28,7 @@
                 <div>
                     <ul>
                         <a href="#services"><li>Services</li></a>
-                        <a href="#offers"><li>Offers</li></a>
                         <a href="#testamonials"><li>Testamonials</li></a>
-                        <a href="#about-me"><li>About Me</li></a>
                         <a href="#contact"><li>Contact</li></a>
                     </ul>
                 </div>
@@ -43,6 +40,13 @@
                     <div class="header-border">
                         <h1 class="hdr bold">ZEST REJUVENATING</h1>
                         <h1 class="hdr">FACIAL AESTHETICS</h1>
+                    </div>
+                </div>
+                <div class="home-icons">
+                    <i class="fab fa-facebook-square hover"></i>
+                    <i class="fas fa-envelope-square hover"></i>
+                    <div class="tooltip"><i id="phone-icon" class="fas fa-phone-square hover"></i>
+                        <span class="tooltiptext">555-123-456</span>
                     </div>
                 </div>
             </div>
@@ -86,7 +90,7 @@
                 </div>
             </div>
             <hr>
-            <div class="services-content services-content-color2">   
+            <div class="services-content services-content-color1">   
                 <div class="info-tab">
                     <div class="info-header-container">
                         <div class="tab-title"><h3>BioRePeel</h3></div>
@@ -115,7 +119,7 @@
                 </div>
             </div> 
             <hr>
-            <div class="services-content services-content-color3">   
+            <div class="services-content services-content-color1">   
                 <div class="info-tab">
                     <div class="info-header-container">
                         <div class="tab-title"><h3>Microneedling</h3></div>
@@ -205,27 +209,40 @@
         <div class="skew-div-right-top"></div>
         
         
-        <div id="about-me" class="about-me-container">
-            <div class="about-me-header about-me-header-container">
-                <h1 class="hdr">ABOUT ME</h1>
+        <div id="about-me" class="contact-container">
+            <div class="">
+                <h1 class="">Why not get in touch?</h1>
             </div>
-            <br>
-            <div class="about-me-content">
-                <div class="about-me-pic"><img src="./imgs/avatar.png"></div>
-                <div class="about-me-quote"><h4><i class="fas fa-quote-left"></i> I started Zest Rejuvenating Facial Aesthetics back in ..... <i class="fas fa-quote-right"></i></h4></div>
-                <br>
-                <div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, reprehenderit totam. Suscipit fuga, enim nemo, explicabo architecto vero ut totam perspiciatis earum voluptatibus repellat. Ad aperiam at libero perspiciatis ullam.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat vitae praesentium porro adipisci ad at possimus quam, magni consequuntur deleniti omnis voluptatum, corrupti dolorem iusto harum repudiandae doloribus esse asperiores neque debitis. Assumenda doloremque debitis, a maiores molestias temporibus beatae!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia saepe recusandae sunt voluptatibus assumenda, rerum id! Itaque deserunt molestias dolor!
-                </p>
+            <div class="">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fas fa-envelope-square"></i>
+                <div class="tooltip"><i id="phone-icon" class="fas fa-phone-square"></i>
+                    <span class="tooltiptext">555-123-456</span>
                 </div>
             </div>
+            <br><br>
+            <hr>
+            <div class="">
+                <h1 class="">Our locations</h1>
+            </div>
+            <div class="maps">
+                <div>
+                    <li>Gaskell Avenue Dental Practice,</li>
+                    <li>5 Gaskell Avenue,</li>
+                    <li>Knutsford,</li>
+                    <li>Cheshire,</li>
+                    <li>WA16 0DA</li>
+                </div>
+                <img src="./imgs/knutsford-map-small.png" alt="map">
+                <div>
+                    <li>K2 Salon,</li>
+                    <li>159 London Road,</li>
+                    <li>Stoke-on-Trent,</li>
+                    <li>ST4 7QE</li>
+                </div>
+                <img src="./imgs/stoke-map-small.png" alt="map">
+            </div>
+           
         </div>
         <!-- <div id="contact" class="contact-container">
             <div class="contact-icons">
@@ -253,6 +270,7 @@
                 </div>
             </div>
         </div>
+         -->
         <div class="footer">
             <div class="footer-container">
                 <div>
@@ -265,7 +283,7 @@
                     <h4>2019 S-pro Software</h4>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
