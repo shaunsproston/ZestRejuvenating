@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <title>ZestRejuvenatingFacialAesthetics</title>
     <meta charset="utf-8" name="viewport" content="width-device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="main-container">    
+    <div class="main-container">
         <div class="nav-container">
-            <div>
+            <div class="home-icon">
                 <a href="#home"><i id="home-icon" class="fas fa-home hover-black"></i></a>
             </div>
             <div class="nav-bar">
                 <ul>
-                    <a href="#services"><li class="hover-black">Services</li></a>
-                    <a href="#testamonials"><li class="hover-black">Testamonials</li></a>
-                    <a href="#contact"><li class="hover-black">Contact</li></a>
+                    <a href="#services">
+                        <li class="hover-black">Services</li>
+                    </a>
+                    <a href="#testamonials">
+                        <li class="hover-black">Testamonials</li>
+                    </a>
+                    <a href="#contact">
+                        <li class="hover-black">Contact</li>
+                    </a>
                 </ul>
             </div>
+            <input type="radio" id="toggler" name="toggler" class="input">
+            <label for="toggler"><i id="toggler" class="fas fa-bars"></i></label>
             <div class="hamburger-menu">
-                <div class="hamburger-menu-background"></div>
-                <div>
-                    <i id="menu-icon" class="fas fa-bars"></i>
-                </div>
-                <div>
-                    <ul>
-                        <a href="#services"><li>Services</li></a>
-                        <a href="#testamonials"><li>Testamonials</li></a>
-                        <a href="#contact"><li>Contact</li></a>
-                    </ul>
-                </div>
+                <a href="#services">
+                    <li class="hover-black">Services</li>
+                </a>
+                <a href="#testamonials">
+                    <li class="hover-black">Testamonials</li>
+                </a>
+                <a href="#contact">
+                    <li class="hover-black">Contact</li>
+                </a>
+                
+                <br>
+                <input type="radio" id="close-btn" name="toggler">
+                <label for="close-btn">x</label>
             </div>
+            
         </div>
         <div id="home" class="home-container">
             <div class="jumbotron-header">
@@ -56,14 +70,41 @@
                         <a href="tel:+447966697290">
                             <i id="phone-icon" class="fas fa-phone-square hover"></i>
                         </a>
-                        <span class="tooltiptext">555-123-456</span>
+                        <span class="tooltiptext">+44 7966 697 290</span>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-container">
+                <div class="intro-border">
+                    <p>At Zest we believe in a fresh and modern approach to anti-ageing treatments for skin health with no use of toxins.</p>
+                    <p>We provide a range of delicious procedures to treat many of the skins ageing issues.</p>
+                    <div class="list-container">
+                        <div>
+                            <ul>
+                                <li>Acne</li>
+                                <li>Dark circles</li>
+                                <li>Dullness</li>
+                                <li>Fine lines</li>
+                            </ul>
+                        </div>
+                        <!-- <div>
+                            <ul>
+                            </ul>
+                        </div> -->
+                        <div>
+                            <ul>
+                                <li>Hyper-pigmentation</li>
+                                <li>Sun spots</li>
+                                <li>Deep wrinkles</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div id="services" class="skew-div-left-top"></div>
         <div class="filler-div"></div>
-        
+
         <div class="services-container">
             <div class="services-header services-header-container">
                 <h1 class="hdr">SERVICES</h1>
@@ -71,195 +112,277 @@
             <br>
             <br>
             <br>
-            <div class="services-content-container services-content-color1">   
+            <div class="services-content-container services-content-color1">
                 <div class="info-tab">
-
-
-
-
                     <div class="services-subheader">
-                        <div class="tab-title"><h3>Sunekos</h3></div>
+                        <div class="tab-title">
+                            <h3>Sunekos</h3>
+                        </div>
                     </div>
                     <div class="services-content">
-                        <div class="services-content-img">
-                            <img class="img-left" src="./imgs/sunekos.jpg">
-                            <img class="img-right" src="./imgs/sunekos2.jpg">
-                            <img class="img-left" src="./imgs/sunekos3.jpg">
+                        
+                        <!-- RENDERED ON SMALL SCREENS ONLY BELOW 926px WIDE-->
+                        <div class="services-content-text small-screen">
+                            <br>
+                            <h3>"Innovative, new anti-ageing treatment that stimulates collagen and elastin to restore a natural, youthful look"</h3>
                             <br><br><br>
                         </div>
+                        <!-- ---------------------------------------------- -->
+
+                        <div class="services-content-img">
+                            <img src="./imgs/sunekos.jpg">
+                            <img src="./imgs/sunekos2.jpg">
+                            <img class="large-screen" src="./imgs/sunekos3.jpg">
+                            <br><br><br>
+                        </div>
+                        
                         <div class="services-content-text">
+                        
+                            <!-- RENDERED ON LARGE SCREENS ONLY ABOVE 926px WIDE-->
+                            <div class="services-content-text large-screen">
+                                <h3>"Innovative, new anti-ageing treatment that stimulates collagen and elastin to restore a natural, youthful look"</h3>
+                            </div>
+                            <!-- ---------------------------------------------- -->
+
                             <p>
-                                Innovative New Anti-Ageing treatment Sunekos Now Available In The UK.
+                                New to the UK aesthetic market and completely revolutionising anti-ageing treatments,
+                                Sunekos combines breakthrough technology with an innovative patented formula that
+                                combats more signs of ageing, banishes dark circles, and bags under the eyes and can
+                                even be used to treat sun-damaged skin and acne scarring.
                                 <br><br>
-                                New to the UK aesthetic market and completely revolutionising anti-ageing treatments, Sunekos combines breakthrough technology with an innovative patented formula that combats more signs of ageing, banishes dark circles, and bags under the eyes and can even be used to treat sun-damaged skin and acne scaring.
+                                While some anti-ageing injectables temporarily fill or plump to reduce signs of ageing,
+                                Sunekos stimulates collagen and elastin to restore a natural youthful look, tighten the
+                                skin and improve hydration.
+                                As the skin ages it loses elastic properties (elastin) and collagen which causes the
+                                skin to become more fragile, lose volume and start to sag and wrinkle.
                                 <br><br>
-                                While some anti-ageing injectables temporarily fill or plump to reduce signs of ageing, Sunekos stimulates collagen and elastin to restore a natural youthful look, tighten the skin and improve hydration.
-                                As the skin ages it loses elastic properties (elastin) and collagen which causes the skin to become more fragile, lose volume and start to sag and wrinkle.
-                                <br><br>
-                                Sunekos is a new injectable containing a patented formula of amino acids and hyaluronic acid. It regenerates the extracellular matrix by stimulating the fibroblasts in the skin to produce a reinvigorated mix of collagen and elastin.
-                                Results with Sunekos accumulate through four sessions carried out with a 7 to 10 day rest period and will last up to 6 months. And because Sunekos utilises natural hyaluronic acid it is completely safe.
+                                Sunekos is a new injectable containing a patented formula of amino acids and hyaluronic
+                                acid. It regenerates the extracellular matrix by stimulating the fibroblasts in the skin
+                                to produce a reinvigorated mix of collagen and elastin.
+                                Results with Sunekos accumulate through four sessions carried out with a 7 to 10 day
+                                rest period and will last up to 6 months. And because Sunekos utilises natural
+                                hyaluronic acid it is completely safe.
                                 <br>
                                 <br>
-                                For more information visit www.sunekos.com/prodotti/sunekos-200
+                                <br>
+                                For more information visit <a href="https://www.sunekos.com/prodotti/sunekos-200" target="blank">www.sunekos.com/prodotti/sunekos-200</a>
                             </p>
                         </div>
                     </div>
-                    
+
+                    <!-- RENDERED ON SMALL SCREENS ONLY BELOW 926px WIDE-->
+                    <div class="services-content-lrg small-screen">
+                        <div class="services-content-img">
+                            <img src="./imgs/sunekos4.jpg">
+                        </div>
+                        <br><br><br>
+                    </div>
+                    <!-- ---------------------------------------------- -->
+
                     <div class="price-container">
                         <h4>£112.50 <span>per treatment<span></h4>
                         <button>BOOK NOW</button>
                     </div>
-                    
-                    <div class="btn-container"></div>
-
                 </div>
             </div>
-            <hr>
-            <div class="services-content-container services-content-color1">   
+            <br>
+            <div class="services-content-container services-content-color1">
                 <div class="info-tab">
-
-
-
                     <div class="services-subheader">
-                        <div class="tab-title"><h3>BioRePeel</h3></div>
-                    </div>
+                        <div class="tab-title">
+                            <h3>BioRePeel</h3>
+                        </div>
+                    </div> 
                     <div class="services-content">
+
+                        <!-- RENDERED ON SMALL SCREENS ONLY BELOW 926px WIDE-->
+                        <div class="services-content-text small-screen">
+                            <br>
+                            <h3>"BioRePeel requires no injections, no anaesthetic, and gives instant results"</h3>
+                            <br><br><br>
+                        </div>
+                        <!-- ---------------------------------------------- -->
+
                         <div class="services-content-img">
-                            <img class="img-left" src="./imgs/bioRePeel2.png">
-                            <img class="img-right" src="./imgs/hikari.jpg">
-                            <img class="img-left" src="./imgs/biorepeel1.png">
+                            <img src="./imgs/biorepeel1.png">
+                            <img src="./imgs/biorepeel3.jpg">
+                            <img class="large-screen" src="./imgs/bioRePeel2.png">
                             <br><br><br>
                         </div>
                         <div class="services-content-text">
+
+                            <!-- RENDERED ON LARGE SCREENS ONLY ABOVE 926px WIDE-->
+                            <div class="services-content-text large-screen">
+                                <h3>"BioRePeel requires no injections, no anaesthetic, and gives instant results"</h3>
+                            </div>
+                            <!-- ---------------------------------------------- -->
+
                             <p>
-                                Innovative New Anti-Ageing treatment Sunekos Now Available In The UK.
+                                BioRePeel is an innovative treatment, using a patented two-phase technology, providing
+                                biostimulating, revitalising and peeling-like effect.
+                                Its rich composition is what sets BioRePeel apart from its competitors.
                                 <br><br>
-                                New to the UK aesthetic market and completely revolutionising anti-ageing treatments, Sunekos combines breakthrough technology with an innovative patented formula that combats more signs of ageing, banishes dark circles, and bags under the eyes and can even be used to treat sun-damaged skin and acne scaring.
+                                The combination of BioRePeel active components allows it to effectively prevent the
+                                ageing of the skin, the consequences caused by ultraviolet light or pigmentation, and
+                                the damage caused by acne. The essence of the treatment lies within mild exfoliation
+                                combined with powerful skin proliferation and stimulation of biosynthetic processes that
+                                help restoring the structure of the skin. The treatment is suitable for young skin
+                                during acute stages of acne, comedonal acne, with recent or "fresh" scarring, as well as
+                                fine wrinkles.
                                 <br><br>
-                                While some anti-ageing injectables temporarily fill or plump to reduce signs of ageing, Sunekos stimulates collagen and elastin to restore a natural youthful look, tighten the skin and improve hydration.
-                                As the skin ages it loses elastic properties (elastin) and collagen which causes the skin to become more fragile, lose volume and start to sag and wrinkle.
-                                <br><br>
-                                Sunekos is a new injectable containing a patented formula of amino acids and hyaluronic acid. It regenerates the extracellular matrix by stimulating the fibroblasts in the skin to produce a reinvigorated mix of collagen and elastin.
-                                Results with Sunekos accumulate through four sessions carried out with a 7 to 10 day rest period and will last up to 6 months. And because Sunekos utilises natural hyaluronic acid it is completely safe.
-                                <br>
-                                <br>
-                                For more information visit www.sunekos.com/prodotti/sunekos-200
+                                This procedure requires no injections, no anaesthetic, and gives instant results. It is
+                                suitable for all ages, contains no ammonia, does not darken or oxidise the skin and can
+                                be used on the entire body, in all seasons.
+                                
                             </p>
                         </div>
                     </div>
-                    
+
+                    <!-- RENDERED ON SMALL SCREENS ONLY BELOW 926px WIDE-->
+                    <div class="services-content-lrg small-screen">
+                        <br>
+                        <div class="services-content-img">
+                            <img src="./imgs/bioRePeel2large.png"> 
+                            <!-- RESIZE THIS IMAGE TO BE FULL WIDTH -->
+                        </div>
+                        <br><br><br>
+                    </div>
+                    <!-- ---------------------------------------------- -->
+
                     <div class="price-container">
                         <h4>£30 <span>per treatment<span></h4>
                         <button>BOOK NOW</button>
                     </div>
-                    
-                    <div class="btn-container"></div>
-
-                
                 </div>
-            </div> 
-            <hr>
-            <div class="services-content-container services-content-color1">   
+            </div>
+            <br>
+            <div class="services-content-container services-content-color1">
                 <div class="info-tab">
-
-
                     <div class="services-subheader">
-                        <div class="tab-title"><h3>Micro Needling</h3></div>
+                        <div class="tab-title">
+                            <h3>Micro Needling</h3>
+                        </div>
                     </div>
                     <div class="services-content">
-                        <div class="services-content-img">
-                            <img class="img-left" src="./imgs/microneedling1.jpg">
-                            <img class="img-right" src="./imgs/microneedling3.jpg">
+
+                        <!-- RENDERED ON SMALL SCREENS ONLY BELOW 926px WIDE-->
+                        <div class="services-content-text small-screen">
+                            <br>
+                            <h3>"Great for eliminating moderate to severe acne scars, stretch marks, fine lines and wrinkles."</h3>
                             <br><br><br>
                         </div>
+                        <!-- ---------------------------------------------- -->
+
+                        <div class="services-content-img">
+                            <img src="./imgs/microneedling3.jpg">
+                            <img src="./imgs/hikari.jpg">
+                            <br><br><br>
+                        </div>
+
                         <div class="services-content-text">
+
+                            <!-- RENDERED ON LARGE SCREENS ONLY ABOVE 926px WIDE-->
+                            <div class="services-content-text large-screen">
+                                    <h3>"Great for eliminating moderate to severe acne scars, stretch marks, fine lines and wrinkles."</h3>
+                            </div>
+                            <!-- ---------------------------------------------- -->
+                            
+
+
                             <p>
-                                Micro needling is the process of creating controlled damage to the skin through the use of tiny needles that are attached to the face of a hand-held device.  A nutrient rich skin serum is typically applied to the face before micro needling performed.  
+                                Micro needling is the process of creating controlled damage to the skin through the use
+                                of tiny needles that are attached to the face of a hand-held device. A nutrient rich
+                                skin serum is typically applied to the face before micro needling performed.
                                 The serum can then deeply penetrate the skin at each puncture site for maximum benefits.
+
                                 <br><br>
-                                Both the process of damaging the skin in a controlled fashion and the application of a skin-repairing serum help facilitate an increase in natural collagen production while expediting the regeneration of new skin cells.
-                                Micro needling is great for eliminating moderate to severe acne scars, stretch marks, fine lines ad wrinkles. One of the major benefits of micro needling is the fact that there is no excessive skin peeling to deal with. 
-                                Recovery times are short and micro needling can be used to treat the face and other, select body areas.
-                                <br><br>
-                                
+                                Both the process of damaging the skin in a controlled fashion and the application of a
+                                skin-repairing serum help facilitate an increase in natural collagen production while
+                                expediting the regeneration of new skin cells.
+                                Micro needling is great for eliminating moderate to severe acne scars, stretch marks,
+                                fine lines and wrinkles. One of the major benefits of micro needling is the fact that
+                                there is no excessive skin peeling to deal with.
+                                Recovery times are short and micro needling can be used to treat the face and other,
+                                select body areas.
                                 <br>
                                 <br>
-                                For more information visit www.sunekos.com/prodotti/sunekos-200
+                                <br>
+                                For more information visit <a href="https://www.thehealthy.com/beauty/anti-aging/microneedling-benefits/" target="blank">www.thehealthy.com/beauty/anti-aging/microneedling-benefits</a>
                             </p>
                         </div>
                     </div>
                     <div class="services-content-lrg">
                         <div class="services-content-img">
-                            <img class="img-left" src="./imgs/microneedling4.jpg">
+                            <img src="./imgs/microneedling4.jpg">
                         </div>
                     </div>
                     <div class="price-container">
                         <h4>£115 <span>per treatment<span></h4>
                         <button id="testamonials">BOOK NOW</button>
                     </div>
-                    <div class="btn-container"></div>    
                 </div>
             </div>
         </div>
-        
-        
-        <div class="skew-div-left-bottom"></div>
 
+        <div class="skew-div-left-bottom"></div>
 
         <div class="testamonial-container">
             <div class="testamonial-header testamonial-header-container">
                 <h1 class="hdr">TESTAMONIALS</h1>
             </div>
-            <br>
+            <br><br><br>
             <div class="testamonials-container1">
-                
+
                 <div class="testamonials-section">
                     <div class="testamonials-quote">
-                        <h5>"Karen is very good."</h5>
-                        <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""
-                        </p>
+                        <h5>"Karen is very professional and explained everything to me before she started. I was a little nervous about the needles however once the gel is applied to the area you can not really feel them. I have noticed an improvement in my problem areas already on my forehead and around my eyes and mouth. The after care treatment is easy to follow and can not wait to see the full results next week. Thanks very much!"</h5>
                         <div class="box-right"></div>
                     </div>
                     <div class="testamonials-name-right">
-                        <h4>Jane Doe.</h4>
+                        <h4>Alex Davidson</h4>
                     </div>
                 </div>
-                
+
                 <div class="testamonials-section">
-                    <div class="testamonials-quote">    
-                        <h5>"Very happy to recommend her"</h5>
-                        <p>    
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                        </p>
+                    <div class="testamonials-quote">
+                        <h5>"Highly recommended."</h5>
+                        
                         <div class="box-left"></div>
                     </div>
                     <div class="testamonials-name-left">
-                        <h4>John Smith</h4>
+                        <h4>Mr S. Y.</h4>
                     </div>
                 </div>
-                
+
                 <div class="testamonials-section">
-                    <div class="testamonials-quote">    
-                        <h5>"Zest rejuvenating are awesome."</h5>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+                    <div class="testamonials-quote">
+                        <h5>"My wrinkles have gone! Amazing and natural treatment."</h5>
                         <div class="box-right"></div>
                     </div>
                     <div class="testamonials-name-right">
-                        <h4>Jon White</h4>
+                        <h4>Mrs J. P.</h4>
                     </div>
                 </div>
-                
+
+                <div class="testamonials-section">
+                    <div class="testamonials-quote">
+                        <h5>"Very surprised with the results."</h5>
+                        
+                        <div class="box-left"></div>
+                    </div>
+                    <div class="testamonials-name-left">
+                        <h4>Miss R. T.</h4>
+                    </div>
+                </div>
+
             </div>
         </div>
 
 
         <div class="skew-div-left-top"></div>
         <div class="skew-div-right-top"></div>
-        
-        
+
+
         <div id="contact" class="contact-container">
             <div class="">
                 <h1 class="">Why not get in touch?</h1>
@@ -268,14 +391,14 @@
                 <a href="https://www.facebook.com/zestrejuvenatingfacialaesthetics/" target="_blank">
                     <i class="fab fa-facebook-square"></i>
                 </a>
-                <a href="mailto:karenmcb@sky.com">    
+                <a href="mailto:karenmcb@sky.com">
                     <i class="fas fa-envelope-square"></i>
                 </a>
                 <div class="tooltip">
                     <a href="tel:+447966697290">
                         <i id="phone-icon" class="fas fa-phone-square"></i>
                     </a>
-                    <span class="tooltiptext">555-123-456</span>
+                    <span class="tooltiptext">+44 7966 697 290</span>
                 </div>
             </div>
             <br><br>
@@ -285,31 +408,36 @@
             </div>
             <div class="maps-row">
                 <div class="maps-col">
-                    <a href="https://www.google.com/maps/place/Gaskell+Ave,+Knutsford+WA16+0DA/@53.3041191,-2.3806525,17z/data=!3m1!4b1!4m5!3m4!1s0x487a546ae684a295:0x507f06945f169909!8m2!3d53.3038709!4d-2.3788755" target="_blank">
+                    <a href="https://www.google.com/maps/place/Gaskell+Ave,+Knutsford+WA16+0DA/@53.3041191,-2.3806525,17z/data=!3m1!4b1!4m5!3m4!1s0x487a546ae684a295:0x507f06945f169909!8m2!3d53.3038709!4d-2.3788755"
+                        target="_blank">
                         <img src="./imgs/knutsford-map-small.png" alt="map">
                     </a>
-                    <div>
+                    <div class="maps-row-address">
                         <li>Gaskell Avenue Dental Practice, 5 Gaskell Avenue,</li>
                         <li>Knutsford, Cheshire, WA16 0DA</li>
                     </div>
                 </div>
                 <div class="maps-col">
-                    <a href="https://www.google.com/maps/place/London+Rd,+Stoke-on-Trent+ST4+7QE/@53.0005816,-2.1906511,17z/data=!3m1!4b1!4m5!3m4!1s0x487a68464071072b:0xe787d2651d64449f!8m2!3d53.0004561!4d-2.1881246" target="_blank">
-                        <img src="./imgs/stoke-map-small.png" alt="map">
-                    </a>
                     <div>
+                        <a href="https://www.google.com/maps/place/London+Rd,+Stoke-on-Trent+ST4+7QE/@53.0005816,-2.1906511,17z/data=!3m1!4b1!4m5!3m4!1s0x487a68464071072b:0xe787d2651d64449f!8m2!3d53.0004561!4d-2.1881246"
+                            target="_blank">
+                            <img src="./imgs/stoke-map-small.png" alt="map">
+                        </a>
+
+                    </div>
+                    <div class="maps-row-address">
                         <li>K2 Salon, 159 London Road,</li>
                         <li>Stoke-on-Trent, ST4 7QE</li>
                     </div>
                 </div>
-           </div>
-           <br>
-           <p><b>email</b>: <a href="mailto:karenmcb@sky.com">karenmcb@sky.com</a>></p>
-           <p><b>tel</b>: <a href="tel:+447966697290">+44 7966697290</a></p>
-           <div class="footer">
+            </div>
+            <br>
+            <p><strong>email</strong>: <a href="mailto:karenmcb@sky.com">karenmcb@sky.com</a>></p>
+            <p><strong>tel</strong>: <a href="tel:+447966697290">+44 7966697290</a></p>
+            <div class="footer">
                 <div class="footer-container">
                     <div class="copyright">
-                        <h4>Designed by S-pro Software</h4>
+                        <h4>Designed by S-Pro Software</h4>
                         &copy;
                         <h4>2019 S-Pro Software</h4>
                     </div>
@@ -318,4 +446,5 @@
         </div>
     </div>
 </body>
+
 </html>
