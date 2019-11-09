@@ -884,7 +884,13 @@ h4 span {
 
 @media only screen and (max-width: 550px) {
     
+    .header-container, .home-icons, .book-btn-container, .main {
+        position: static;
+        margin: auto;
+        /* border: solid red 1px; */
+    }
     .jumbotron-header{
+        height: 1000px;
         margin: 0px;
     }
     .header-container .hdr {
@@ -893,20 +899,23 @@ h4 span {
     .hdr{
         font-size: 25px;
     }
+    
     .header-container {
-        top: 200px;
-        right: 15%;
+        /* position: static; */
+        /* display: inline-block; */
+        /* margin: 0 auto 0 auto; */
+        /* border: solid red 2px; */
+        /* top: 200px; */
         width: 70%;
         min-width: 279px;
     }
+    
     .home-icons i{
-        
-        margin-right: 0px;
-        margin-left: 40px;
+        margin: 100px 20px;
         font-size: 40px;
     }
     .home-icons{
-        top: 350px;
+        /* top: 350px; */
         width: 90%;
     }
     .main{
@@ -1058,31 +1067,7 @@ h4 span {
 /******************************* MEDIA QUERY WIDTH 430px ***************************/
 
 @media only screen and (max-width: 430px) {
-    .header-container {
-        right: 15%;
-    }
-}
-
-/******************************* MEDIA QUERY WIDTH 380px ***************************/
-
-@media only screen and (max-width: 380px) {
-    .header-container {
-        right: 10%;
-    }
-}
-
-/******************************* MEDIA QUERY WIDTH 350px ***************************/
-
-@media only screen and (max-width: 350px) {
-    .header-container {
-        right: 7%;
-    }
-}
-
-/******************************* MEDIA QUERY WIDTH 320px ***************************/
-
-@media only screen and (max-width: 320px) {
-    .header-container {
-        right: 5%;
+    .jumbotron-header{
+        height: 900px;
     }
 }
