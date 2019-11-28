@@ -1106,7 +1106,7 @@ h4 span {
         font-size: 20px;
     }
     .home-icons i{
-        margin: 100px 20px;
+        margin: 20px 20px 60px 20px;
         font-size: 40px;
     }
     .home-icons{
@@ -1114,10 +1114,6 @@ h4 span {
     }
     .home-container {
         background-image: url("../imgs/backgroundImg-sml11.jpg");
-    }
-    .main-book-now{
-        top: 600px;
-        right: 80px;
     }
     .services-header-container {
         border-left: 0px;
@@ -1221,7 +1217,7 @@ h4 span {
     #close-btn {
         display: none;
     }
-    
+
     label {
         padding: 5px;
         font-size: 30px;
@@ -1246,13 +1242,6 @@ h4 span {
 
 @media only screen and (max-width: 500px) {
 
-    /* .main-img-sml{
-        display: none;
-    }
-    .main-img-mobile {
-        display: inline-block;
-    } */
-
     .main-img-sml{
         display: none;
     }
@@ -1263,11 +1252,10 @@ h4 span {
     .header-border {
         flex-direction: column;
     }
-
-    
-
+    .home-icons i{
+        font-size: 30px;
+    }
 }
-
 
 /******************************* MEDIA QUERY WIDTH 430px ***************************/
 
@@ -1276,7 +1264,6 @@ h4 span {
         height: 900px;
     }
 }
-
 
 /******************************* MEDIA QUERY WIDTH 390px ***************************/
 
