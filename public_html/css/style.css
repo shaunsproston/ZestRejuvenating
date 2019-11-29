@@ -65,6 +65,11 @@ a:visited, a:hover, a:link, a:active {
     display: none;
 }
 
+.anchor {
+    display:block;
+    padding-top:100px;
+    margin-top:-100px;
+ }
 
 /********************* HAMBURGER MENU ACTIVE BELOW 500PX WIDTH ****************/
 
@@ -1099,7 +1104,7 @@ h4 span {
 
 @media only screen and (max-width: 600px) {
     
-    .services-content-container, .testimonials-container1, .testimonial-header-container {
+    .services-content-container, .testimonials-container1, .testimonial-header-container, .services-header-container {
         width: 98%;
         border-left: 0px;
     }
