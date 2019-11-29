@@ -34,7 +34,6 @@ a:visited, a:hover, a:link, a:active {
     position: fixed;
     font-size: 40px;
     padding: 8px;
-    color: #FFF3E5;
 }
 
 .nav-bar li {
@@ -57,6 +56,10 @@ a:visited, a:hover, a:link, a:active {
 }
 #home-icon {
     position: absolute;
+    color: #FFF3E5;
+}
+#home-icon:hover {
+    color: black;
 }
 .hamburger-icon{
     display: none;
@@ -209,14 +212,15 @@ button:hover {
 }
 .list-container {
     display: flex;
+    justify-content: space-evenly;
     margin: 0 auto;
     max-width: 700px;
-    
+    /* border: solid blue 1px; */
 }
 .list-container div {
-    align-items: stretch;
-    margin: auto;
+    /* margin: auto; */
     font-size: 20px;
+    /* border: solid green 1px; */
 }
 
 /*********************************** SKEWED DIVIDES ********************************/
@@ -396,9 +400,9 @@ h4 span {
 }
 
 
-/*********************************** TESTAMONIALS SECTION ********************************/
+/*********************************** TESTIMONIALS SECTION ********************************/
 
-.testamonial-container {
+.testimonial-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -414,7 +418,7 @@ h4 span {
     z-index: 2;
 }
 
-.testamonial-header-container {
+.testimonial-header-container {
     position: relative;
     top: 7600px;
     background-image: linear-gradient(to right, rgba(240, 91, 40, 1), rgba(0,0,0,0));
@@ -424,19 +428,19 @@ h4 span {
     width: 50%;
 }
 
-.testamonials-title{
+.testimonials-title{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-.testamonials-background h2 {
+.testimonials-background h2 {
     font-family: 'Dancing Script', cursive;
     color: white;
 }
 
-.testamonials-container1 {
+.testimonials-container1 {
     position: relative;
     top: 7600px;
     display: flex;
@@ -454,7 +458,7 @@ h4 span {
     z-index: 2;
 }
 
-.testamonials-section {
+.testimonials-section {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -464,21 +468,21 @@ h4 span {
     border-radius: 10px;
 }
 
-.testamonials-name-right, .testamonials-name-left {
+.testimonials-name-right, .testimonials-name-left {
     display: flex;
     flex-direction: row;
     height: auto;
 }
 
-.testamonials-name-right {
+.testimonials-name-right {
     justify-content: flex-end;
 }
 
-.testamonials-name-left {
+.testimonials-name-left {
     justify-content: flex-start;
 }
 
-.testamonials-quote {
+.testimonials-quote {
     text-align: center;
     background-color: rgba(236, 236, 236, 1);
     padding: 0px 30px;
@@ -486,11 +490,11 @@ h4 span {
     border: solid 1px grey;
 }
 
-.testamonials-quote h5 {
+.testimonials-quote h5 {
     font-size: 20px;
 }
 
-.testamonials-container p{
+.testimonials-container p{
     padding: 5px;
 }
 
@@ -539,7 +543,7 @@ h4 span {
 }
 
 .contact-container i {
-    font-size: 60px;
+    font-size: 40px;
     margin: 25px;
 }
 .contact-container i:hover {
@@ -550,14 +554,18 @@ h4 span {
 .maps-row{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 .maps-col{
+    display: flex;
+    align-items: center;
     flex-direction: column;
+    min-width: 400px;
 }
 .maps-col img{
     width: 300px;
     height: 300px;
-    margin: 10px 60px;
     border: solid grey 1px;
     cursor: zoom-in;
 }
@@ -581,7 +589,7 @@ h4 span {
 
 .tooltip .tooltiptext {
   right: -30%;
-  top: 100%;
+  top: 80px;
   visibility: hidden;
   width: 150px;
   background-color: black;
@@ -632,15 +640,15 @@ h4 span {
 .skew-div-left-bottom {
     height: 6500px;
 }
-.testamonials-container1, .testamonial-header-container {
+.testimonials-container1, .testimonial-header-container {
     top: 7000px;
 }
-.testamonial-container {
+.testimonial-container {
     height: 8300px;
 }
 
 @media only screen and (max-width: 1500px) {
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         top: 7000px;
     }
 }
@@ -649,19 +657,19 @@ h4 span {
     .skew-div-left-bottom {
         height: 5800px;
     }
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         top: 6000px;
     }
-    .testamonial-container {
+    .testimonial-container {
         height: 7300px;
     }
 }
 
 @media only screen and (max-width: 1150px) {
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         top: 6200px;
     }
-    .testamonial-container {
+    .testimonial-container {
         height: 7500px;
     }   
 }
@@ -671,10 +679,10 @@ h4 span {
     .skew-div-left-bottom {
         height: 6000px; 
     }
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         top: 6400px;
     }
-    .testamonial-container {
+    .testimonial-container {
         height: 7700px;
     }  
 }
@@ -683,10 +691,10 @@ h4 span {
     .skew-div-left-bottom {
         height: 6200px; 
     }
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         top: 6600px;
     }
-    .testamonial-container {
+    .testimonial-container {
         height: 7900px;
     } 
 }
@@ -695,10 +703,10 @@ h4 span {
     .skew-div-left-bottom {
         height: 5900px; 
     }
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         top: 6200px;
     }
-    .testamonial-container {
+    .testimonial-container {
         height: 7500px;
     }
 }
@@ -706,10 +714,10 @@ h4 span {
     .skew-div-left-bottom {
         height: 7400px; 
     }
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         top: 7700px;
     }
-    .testamonial-container {
+    .testimonial-container {
         height: 9000px;
     }
 }
@@ -718,10 +726,10 @@ h4 span {
     .skew-div-left-bottom {
         height: 8400px; 
     }
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         top: 8700px;
     }
-    .testamonial-container {
+    .testimonial-container {
         height: 9900px;
     }
 }
@@ -730,19 +738,19 @@ h4 span {
     .skew-div-left-bottom {
         height: 8300px; 
     }
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         top: 8400px;
     }
-    .testamonial-container {
+    .testimonial-container {
         height: 9500px;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         top: 8600px;
     }
-    .testamonial-container {
+    .testimonial-container {
         height: 9800px;
     }
 }
@@ -751,10 +759,10 @@ h4 span {
     .skew-div-left-bottom {
         height: 8500px; 
     }
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         top: 8700px;
     }
-    .testamonial-container {
+    .testimonial-container {
         height: 9900px;
     }
 }
@@ -763,10 +771,10 @@ h4 span {
     .skew-div-left-bottom {
         height: 8700px; 
     }
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         top: 8800px;
     }
-    .testamonial-container {
+    .testimonial-container {
         height: 10000px;
     }
 }
@@ -774,10 +782,10 @@ h4 span {
     .skew-div-left-bottom {
         height: 8900px; 
     }
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         top: 9000px;
     }
-    .testamonial-container {
+    .testimonial-container {
         height: 10200px;
     }
 }
@@ -785,10 +793,10 @@ h4 span {
     .skew-div-left-bottom {
         height: 9100px; 
     }
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         top: 9200px;
     }
-    .testamonial-container {
+    .testimonial-container {
         height: 10400px;
     }
 }
@@ -796,10 +804,10 @@ h4 span {
     .skew-div-left-bottom {
         height: 9250px; 
     }
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         top: 9300px;
     }
-    .testamonial-container {
+    .testimonial-container {
         height: 10600px;
     }
 }
@@ -807,10 +815,10 @@ h4 span {
     .skew-div-left-bottom {
         height: 9400px; 
     }
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         top: 9400px;
     }
-    .testamonial-container {
+    .testimonial-container {
         height: 10700px;
     }
 }
@@ -866,7 +874,7 @@ h4 span {
     .services-content-container, .services-header-container {
         width: 75%;
     }
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         width: 65%;
     }
     .intro-border {
@@ -881,6 +889,7 @@ h4 span {
     .intro-container, .services-content-container, .services-header-container {
         width: 80%;
     }
+    
     .services-content-container h3 {
         font-size: 26px;
     }
@@ -906,6 +915,10 @@ h4 span {
     .intro-container li {
         font-size: 18px;
     }
+    .testimonial-container {
+        background-image: url("../imgs/backgroundImg2-sml.jpg");
+        background-position: left;
+    }
 }
 
 /******************************* MEDIA QUERY WIDTH 1000px ***************************/
@@ -915,7 +928,7 @@ h4 span {
     .intro-container, .services-content-container, .services-header-container {
         width: 90%;
     }
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         width: 75%;
     }
     .hdr {
@@ -946,7 +959,7 @@ h4 span {
     .intro-container h3 {
         font-size: 20px;
     }
-    .testamonials-quote p {
+    .testimonials-quote p {
         font-size: 16px;
     }
     .main-img{
@@ -988,10 +1001,10 @@ h4 span {
     .services-content p{
         font-size: 14px;
     }
-    .testamonials-container1, .testamonial-header-container {
+    .testimonials-container1, .testimonial-header-container {
         width: 90%;
     }
-    .testamonials-quote h5{
+    .testimonials-quote h5{
         font-size: 18px;
     }
     .contact-container h1 {
@@ -1001,7 +1014,7 @@ h4 span {
         flex-direction: column;
     }
     .contact-container i {
-        font-size: 50px;
+        font-size: 40px;
     }
 }
 
@@ -1036,6 +1049,12 @@ h4 span {
     .intro-border li {
         font-size: 14px;
         margin: 0px;
+    }
+    .tooltip .tooltiptext {
+        top: 70px;
+    }
+    .home-container {
+        background-image: url("../imgs/backgroundImg11.jpg");
     }
 }
 
@@ -1080,7 +1099,7 @@ h4 span {
 
 @media only screen and (max-width: 600px) {
     
-    .services-content-container, .testamonials-container1, .testamonial-header-container {
+    .services-content-container, .testimonials-container1, .testimonial-header-container {
         width: 98%;
         border-left: 0px;
     }
@@ -1113,7 +1132,8 @@ h4 span {
         width: 90%;
     }
     .home-container {
-        background-image: url("../imgs/backgroundImg-sml11.jpg");
+        background-image: url("../imgs/backgroundImg11-sml.jpg");
+        background-position: left;
     }
     .services-header-container {
         border-left: 0px;
@@ -1148,13 +1168,13 @@ h4 span {
     .price-container h4, .price-container span  {
         font-size: 18px;
     }
-    .testamonial-header {
+    .testimonial-header {
         height: auto;
     }
-    .testamonials-quote {
+    .testimonials-quote {
         padding: 5px;
     }
-    .testamonials-quote h5, h4 {
+    .testimonials-quote h5, h4 {
         font-size: 16px;
     }
     .box-left, .box-right {
@@ -1252,7 +1272,10 @@ h4 span {
     .header-border {
         flex-direction: column;
     }
-    .home-icons i{
+    .home-icons i {
+        font-size: 30px;
+    }
+    .contact-container i {
         font-size: 30px;
     }
 }
@@ -1262,6 +1285,13 @@ h4 span {
 @media only screen and (max-width: 430px) {
     .jumbotron-header{
         height: 900px;
+    }
+    .maps-col {
+        min-width: 0px;
+    }
+    .maps-col img {
+        height: 250px;
+        width: 250px;
     }
 }
 
