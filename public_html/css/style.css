@@ -165,10 +165,10 @@ button:hover {
     width: 100%;
     height: 1500px;
     background-image: url("../imgs/backgroundImg11.jpg");
-    /* background-position: center center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed; */
+    background-attachment: fixed;
 }
 
 .jumbotron-header, .button-container {
@@ -1127,9 +1127,10 @@ h4 span {
     }
     .home-container {
         background-image: url("../imgs/backgroundImg11.jpg");
-        /* background-position: center; */
-        /* background-repeat: no-repeat; */
-        /* background-size: cover; */
+        /* background-size: 320px auto; */
+        background-position: left top 30px;
+        background-repeat: repeat;
+        background-size: auto;
         background-attachment: fixed;
     }
     .services-header-container {
