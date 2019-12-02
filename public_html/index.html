@@ -29,24 +29,24 @@
                     </a>
                 </ul>
             </div>
-            <input type="radio" id="toggler" name="toggler" class="input">
-            <label for="toggler"><i id="toggler" class="fas fa-bars"></i></label>
-            <div class="hamburger-menu">
+            <div class="bars">
+                <i id="bars" class="fas fa-bars" onclick="toggle()"></i>
+            </div>
+            <div id="hamburger-menu" class="hamburger-menu hidden">
                 <a href="#services">
-                    <li class="hover-black">Services</li>
+                    <li class="hover-black" onclick="toggle()">Services</li>
                 </a>
                 <a href="#testimonial">
-                    <li class="hover-black">Testimonials</li>
+                    <li class="hover-black" onclick="toggle()">Testimonials</li>
                 </a>
                 <a href="#contact">
-                    <li class="hover-black">Contact</li>
+                    <li class="hover-black" onclick="toggle()">Contact</li>
                 </a>
                 
-                <br>
-                <input type="radio" id="close-btn" name="toggler">
-                <label for="close-btn">x</label>
+                <a>
+                    <li id="close" class="hover-black" onclick="toggle()">X</li>
+                </a>
             </div>
-            
         </div>
         <div id="home" class="home-container">
             <div class="jumbotron-header">
@@ -660,6 +660,13 @@
             </div>
         </div>
     </div>
+    <script>
+        function toggle(){
+            console.log('clicked');
+            let element = document.getElementById("hamburger-menu");
+            element.classList.toggle("show");
+        }
+    </script>
 </body>
 
 </html>
