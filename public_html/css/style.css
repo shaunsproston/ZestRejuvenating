@@ -74,15 +74,13 @@ a:visited, a:hover, a:link, a:active {
 /********************* HAMBURGER MENU ACTIVE BELOW 500PX WIDTH ****************/
 
 .hamburger-menu {
-    display: inline-block;
+    display: none;
     font-size: 30px;
     right: 0px;
 }
 #bars {
     display: none;
 }
-
-
 
 /************************************** HOME ***********************************/
 
