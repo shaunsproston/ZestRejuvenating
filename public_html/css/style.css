@@ -7,11 +7,17 @@ html, body {
     width: 100%;
     height: 100%;
 }
-/* 
+
 a:visited, a:hover, a:link, a:active {
     text-decoration: none;
     color: #FFF3E5;
-} */
+}
+button:visited, a:link, a:active {
+    color: #FFF3E5;
+}
+i:visited, a:link, a:active {
+    color: #FFF3E5;
+}
 
 /*********************************** NAVBAR ********************************/
 
