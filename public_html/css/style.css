@@ -7,11 +7,11 @@ html, body {
     width: 100%;
     height: 100%;
 }
-
+/* 
 a:visited, a:hover, a:link, a:active {
     text-decoration: none;
     color: #FFF3E5;
-}
+} */
 
 /*********************************** NAVBAR ********************************/
 
@@ -1321,6 +1321,11 @@ h4 span {
     } 
 }
 
+@media (hover: hover) {
+    button:hover {
+        background-color: white;
+    }
+}
 
 
 
