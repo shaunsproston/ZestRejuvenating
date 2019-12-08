@@ -12,12 +12,12 @@ a:visited, a:hover, a:link, a:active {
     text-decoration: none;
     color: #FFF3E5;
 }
-button:visited, a:link, a:active {
+/* button:visited, a:link, a:active {
     color: #FFF3E5;
 }
 i:visited, a:link, a:active {
     color: #FFF3E5;
-}
+} */
 
 /*********************************** NAVBAR ********************************/
 
@@ -57,10 +57,10 @@ i:visited, a:link, a:active {
 .hover-black:hover {
     color: black;
 }
-.nav-container a:visited, a:hover, a:link, a:active {
+/* .nav-container a:visited, a:hover, a:link, a:active {
     text-decoration: none;
     color: #FFF3E5;
-}
+} */
 #home-icon {
     position: absolute;
     color: #FFF3E5;
@@ -176,6 +176,10 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+.main-container i:hover {
+    color: black;
+    cursor: pointer;
 }
 
 .jumbotron-header, .button-container {
@@ -578,7 +582,7 @@ h4 span {
 .contact-container p {
     font-size: 20px;
 }
-.contact-container a:visited, a:hover, a:link, a:active {
+.contact-container a:visited, .contact-container a:hover, .contact-container a:link, .contact-container a:active {
     text-decoration: none;
     color: grey;
 }
@@ -1328,11 +1332,8 @@ h4 span {
     } 
 }
 
-@media (hover: hover) {
+/* @media (hover: hover) {
     button:hover {
         background-color: white;
     }
-}
-
-
-
+} */
