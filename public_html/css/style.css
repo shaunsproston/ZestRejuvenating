@@ -57,8 +57,9 @@ i:visited, a:link, a:active {
 .hover-black:hover {
     color: black;
 }
-.hover:hover {
-    color: grey;
+.nav-container a:visited, a:hover, a:link, a:active {
+    text-decoration: none;
+    color: #FFF3E5;
 }
 #home-icon {
     position: absolute;
